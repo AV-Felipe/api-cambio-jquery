@@ -1,0 +1,101 @@
+/* GLOBAL VALUES */
+html {
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+
+/* HEADER ELEMENTS */
+header{
+    background-color: whitesmoke;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form fieldset{
+    border: none;
+    padding: 2px;
+}
+
+form fieldset:nth-child(2){
+    display: none;
+}
+
+
+/* current value display */
+
+main{
+    margin: 15px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-data{
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    align-items: center;
+}
+
+#flag-display li:nth-child(2){
+    margin-left: 50px;
+}
+
+.flag {
+    width: 120px;
+}
+
+#values-display{
+    width: 15.625rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
+}
+@media (max-width: 460px){
+    #values-display{
+        font-size: 1.5rem;
+        width: 100%;
+    }   
+}
+
+#values-display li:first-child, #values-display li:last-child{
+    font-size: .75rem;
+    text-align: end;
+}
+
+/* evolution plot display */
+
+#evolution-plot {
+    display: none;
+}
+
+#evolution-plot table td, #evolution-plot table th {
+    width: max-content;
+    padding: 2px 5px 2px 5px;
+}
+
+#evolution-plot table td {
+    text-align: center;
+}
+
+#evolution-plot table tr:nth-child(even){
+    background-color: antiquewhite;
+}

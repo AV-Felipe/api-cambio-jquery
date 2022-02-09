@@ -1,0 +1,30 @@
+Orientação
+
+jQuery AJAX:
+https://api.jquery.com/jquery.ajax/
+
+Observar que:
+
+A página deve ser bem elaborada visualmente (UI);
+
+A obtenção dos dados de moedas disponível pela API pública: https://docs.awesomeapi.com.br/api-de-moedas
+
+Utilizar a biblioteca jQuery para manipulação de DOM e requisição AJAX, isto é, o resultado deve vir em formato
+de lista que contenha um título e uma tabela que contenha a moeda;
+
+Tratar os erros para melhoria da experiência do usuário (UX).
+
+
+ATIVIDADE
+
+Crie uma página web que disponibilize: 
+
+Uma 'drop list' (tag HTML 'select') que contenha uma lista de moedas;
+
+Ao selecionar a moeda, deve ser exibida a última cotação de moeda, a data e hora, os valores mínimos e máximos de
+fechamento do dia e o valor de fechamento;
+
+Dois campos para definição da data de início e data de fim (tag HTML 'date') para definir o período de obtenção de
+cotação desejada;
+
+Um botão para que, quando o usuário clique receba as cotações do período selecionado pelo usuário.

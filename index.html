@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <title>Conversor de moedas</title>
+
+        <link rel="stylesheet" href="./style.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+        <script type="module" src="./main-script.js" charset="utf-8"></script>
+        
+    </head>
+
+    <body>
+
+        <header>
+            <form>
+                <fieldset id="form-main">
+
+                    <label  for="currency-a">De:</label>
+                    <select id="currency-a" name="currency-origin"></select>
+    
+                    <label  for="currency-b">Para:</label>
+                    <select id="currency-b" name="currency-desired"></select>
+
+                    <button type="button" id="convert-button">Converter</button>
+
+                    <label for="interval-check">Obter evolução</label>
+                    <input type="checkbox" id="interval-check">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <label  for="initial-date">Início:</label>
+                    <input type="date" id="initial-date" name="start_date" />
+
+                    <label  for="end-date">Fim:</label>
+                    <input type="date" id="end-date" name="end_date" />
+
+                </fieldset>
+
+            </form>
+        </header>
+
+        <main id="current-conversion">
+
+            <p id="currentDate"></p>
+
+            <section id="main-data">
+                <ul id="flag-display">
+                    <li><img src="./assets/images/flags/USD.png" alt="dolares maericanos" class="flag" /></li>
+                    <li><img src="./assets/images/flags/BRL.png" alt="reais brasileiros" class="flag" /></li>
+                </ul>
+    
+                <ul id="values-display">
+                    <li>máxima: <span></span></li>
+                    <li>compra: <span></span></li>
+                    <li>venda: <span></span></li>
+                    <li>mínima: <span></span></li>
+                </ul>
+            </section>
+
+
+        </main>
+
+        <main id="evolution-plot">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">data</th>
+                        <th scope="col">mínimo</th>
+                        <th scope="col">venda</th>
+                        <th scope="col">compra</th>
+                        <th scope="col">máximo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+
+            </table>
+        </main>
+
+
+
+        <footer>
+
+            <p>
+                <small>
+                    <a href="https://www.flaticon.com/br/packs/international-flags" title="international flags">Ícones de bandeiras criados por Freepik - Flaticon</a> <br />
+                    <a href="https://www.flaticon.com/br/packs/bitcoins-and-cryptocoins" title="crypto coins">Ícones de criptomoedas criados por Creative Stall Premium - Flaticon</a>
+                </small>
+            </p>
+
+        </footer>
+
+    </body>
+</html>
